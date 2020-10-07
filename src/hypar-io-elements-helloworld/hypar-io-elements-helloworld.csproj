@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>hypar_io_elements_helloworld</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\bertt\.nuget\packages\hypar.elements\0.8.0-alpha.9\contentFiles\any\netstandard2.0\Textures\UV.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hypar.Elements.Serialization.IFC" Version="0.8.0-alpha.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="AC-20-Smiley-West-10-Bldg.ifc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
